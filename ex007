@@ -1,0 +1,12 @@
+   #quantidade de dias,horas,minutos,e segundos.total de segundos
+   
+dia = int(input('quantos dias:'))
+horas = 24
+soma1 = dia * horas
+minutos = 1440
+soma3 = dia * minutos
+segundo = 60
+soma2 = (dia * minutos) * segundo
+print(f'\033[1;34m{dia} dias tem {soma1} horas \033[1;032m{soma3} minutos  \033[1;033m{soma2} segundos')
+
+
