@@ -1,1 +1,27 @@
-# python
+# calculando a media de um aluno por materia ao ano letivo:
+
+materia1 = int(input("materia1 nota"))
+if materia1 >= 7:
+    print("aluno aprovado na materia1")
+else:
+    print("aluno reprovado na materia1")
+materia2 = int(input("materia2 nota"))
+if materia2 >= 7:
+    print("aluno aprovado na materia2")
+else:
+    print("aluno reprovado na materia2")
+materia3 = int(input("materia3 nota"))
+if materia3 >= 7:
+    print("aluno aprovado na materia3")
+else:
+    print("aluno reprovado na materia3")
+soma = (materia1 + materia2 + materia3) / 2
+if soma >= 7:
+    print(f"aluno aprovado sua nota  ao ano final {soma}")
+else:
+    print(f"aluno reprovado sua nota ao ano final {soma}")
+
+
+
+
+
