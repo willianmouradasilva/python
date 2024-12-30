@@ -1,0 +1,17 @@
+#fazendo o computador pensar em qual numero estou pensando:
+from random import randint
+from time import sleep
+computador = randint(0, 5) #FAZ O COMPUTADOR PENSAR
+print('adivinha qual numero estou pensando !!!!')
+print('----*'*10)
+jogador = int(input('vc esta pensando nesse numero :'))
+print('PROCESSANDO...')
+sleep(3)
+if jogador == computador:#JOGADOR TENTA ADIVINHAR OQUE COMPUTADOR TA PENSANDO
+    print('PARABNES VOÇÊ CONSEGUIU ME VENCER!!!')
+else:
+    print('GANHEI,EU PESEI NO NUMERO {} E VC PENSOU NO NUMERO {}'.format(computador, jogador))
+
+
+
+
