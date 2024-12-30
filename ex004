@@ -1,0 +1,50 @@
+#pagamentos em cheque, avista ou parcelados:
+print('{:-^40}'.format('LOJINHA WILLIAN'))
+preço = float(input('preço de compras:R$'))
+print('''FORMAS DE PAGAMENTOS
+[ 1 ] A VISTA OU EM CHEQUE 10% DE DESCONTO 
+[ 2 ] A VISTA OU NO CARTÃO 5% DE DESCONTO
+[ 3 ] EM ATÉ 2X NO CARTÃO  
+[ 4 ] 3X NO CARTÃO CM JUROS  ''')
+opção = int(input('qual é a opção?'))
+if opção == 1:
+    total = preço - (preço * 10 / 100)#se a opção for um ele vai resultar cm 10% de desconto
+    print('o preço normal é {} e com desconto ficara {}R$'.format(preço, total))
+elif opção == 2:
+    total = preço - (preço * 5 / 100)
+    print('o valor com desconto ficara {} R$'.format(total))#se a opção por dois ele vai resultar cm 5% de desc
+elif opção == 3:
+    total = (preço / 2)#se a opção for 3 vai resultar o valor sem juros cm valor normal
+    print('o valor de {}R$ dividido em 2x sai por {} R$ SEM JUROS '.format(preço, total))
+elif opção == 4:
+    total = preço + (preço * 20 / 100)
+    parcela = int(input('QUAL VALOR DA PARCELA :'))#quantas parcelas vou fazer
+    parcejuros = total / parcela
+    print('sua compra sera parcelada em {}x com juros fica {:.2f} R$'.format(parcela, parcejuros))#vai resultar cm valor cm 20% de juros
+else:
+    total = preço
+    print('\033[2;31m OPÇÃO INVALIDA...TENTE NOVAMENTE')#mensagem aparece quando eu nao coloco a opção validar
+    print('sua compra no valor de {} R$ no final vai custar {} R$ COM JUROS'.format(preço, total))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
