@@ -1,0 +1,11 @@
+             #distancia de um passageiro...
+             
+distancia = float(input('digite uma distancia percorrida KM:'))
+pg = 0.50
+preço = distancia * pg
+if distancia <= 200:
+   print(f' com {distancia} KM rodado, a passagem ficara  {preço} R$')
+pg = 0.45
+preço = distancia * pg
+if distancia >= 200:
+    print(f'com viagens mais longas que 200 KM a passagem foi para {preço} R$')
