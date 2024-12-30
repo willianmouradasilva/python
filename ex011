@@ -1,0 +1,16 @@
+                #APROVANDO UM EMPRESTIMO
+casa = float(input('digite o valor da casa:'))
+salario = float(input('digite o valor do salario:'))
+anos = int(input('quantidade de anos a pagar:'))
+emprestimo = casa / (anos * 12)
+minimo = (salario * 30) / 100
+if emprestimo <= minimo:
+    print(f'PARA PAGAR UMA CASA NO VALOR DE {casa} R$ EM {anos}ANOS O VALOR FICARA {emprestimo} R$ POR MÊS')
+    print(f'VALOR APROVADO')
+
+else:
+    print(f'VALOR DO SALARIO DE {salario} R$ NAO CONDIZ OS VALORES DAS PARCELAS DE {emprestimo} R$ A PAGAR')
+    print(f'...EMPRESTIMO NEGADO')
+
+
+
