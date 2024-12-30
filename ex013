@@ -1,0 +1,19 @@
+            #aumento de salario de um funcionario
+            
+  #maior de 1250 com aumento de 10%
+  #menor de 1250 com aumento de 15%
+salario = float(input('digite um salario:'))
+aumento = salario + (salario * 10) / 100
+if salario >= 1250:
+    print('com o aumento de 10% de salario seu valor foi para', aumento, 'R$')
+if salario <= 1250:
+    aumento = salario + (salario * 15) / 100
+    print('Com o salario aumentando 15% seu valor foi para', aumento,'R$')
+
+
+
+
+
+
+
+
