@@ -1,0 +1,50 @@
+            #soma, subtração,multiplicação, divisão
+n1 = int(input('digite o primeiro numero :'))
+n2 = int(input('digite segundo numero:'))
+opera = int(input('''qual operaçaõ vc deseja realizar!!!
+1 [ soma ] 
+2 [ subtração ]
+3 [ multiplicação ]
+4 [ divisão ]
+escolha uma das opições:'''))
+if opera == 1:
+    soma = n1 + n2
+    print(f'{soma}')
+elif opera == 2:
+    sub = n1 - n2
+    print(f'{sub}')
+elif opera == 3:
+    mult = n1 * n2
+    print(f'{mult}')
+elif opera == 4:
+    div = n1 / n2
+    print(f'{div}')
+elif opera >= 5:
+    print(f'opção de operação invalida, digite uma operação de 1 a 4')
+else:
+    inv = -0
+    print('\033[1;31mopção INVALIDA...digite um numero 1 a 4')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
